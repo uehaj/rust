@@ -38,8 +38,6 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
 // OF THE POSSIBILITY OF SUCH DAMAGE.
 
-// ignore-android see #10393 #13206
-
 #![feature(libc, scoped)]
 
 extern crate libc;
