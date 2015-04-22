@@ -11,7 +11,6 @@
 // ignore-windows failing on win32 bot
 // ignore-freebsd: gdb package too new
 // ignore-lldb
-// ignore-android: FIXME(#10381)
 // compile-flags:-g
 // min-gdb-version 7.7
 
@@ -34,6 +33,8 @@
 
 // gdb-command: print none
 // gdb-check:$6 = None
+
+#![allow(unused_variables)]
 
 fn main() {
 

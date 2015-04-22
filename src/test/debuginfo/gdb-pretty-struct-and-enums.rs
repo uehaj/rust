@@ -12,7 +12,6 @@
 // ignore-freebsd: output doesn't match
 // ignore-tidy-linelength
 // ignore-lldb
-// ignore-android: FIXME(#10381)
 // compile-flags:-g
 
 // This test uses some GDB Python API features (e.g. accessing anonymous fields)
@@ -75,6 +74,8 @@
 
 // gdb-command: print none_check2
 // gdb-check:$18 = None
+
+#![allow(dead_code, unused_variables)]
 
 use self::CStyleEnum::{CStyleEnumVar1, CStyleEnumVar2, CStyleEnumVar3};
 use self::MixedEnum::{MixedEnumCStyleVar, MixedEnumTupleVar, MixedEnumStructVar};

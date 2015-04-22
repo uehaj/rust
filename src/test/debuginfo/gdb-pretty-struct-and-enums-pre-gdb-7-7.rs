@@ -17,7 +17,6 @@
 // ignore-freebsd: gdb package too new
 // ignore-tidy-linelength
 // ignore-lldb
-// ignore-android: FIXME(#10381)
 // compile-flags:-g
 
 // gdb-command: run
@@ -36,6 +35,8 @@
 
 // gdb-command: print c_style_enum3
 // gdb-check:$5 = CStyleEnumVar3
+
+#![allow(dead_code, unused_variables)]
 
 struct RegularStruct {
     the_first_field: isize,
